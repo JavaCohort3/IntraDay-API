@@ -1,3 +1,5 @@
+package com.example.intraday;
+
 public class MetaData {
 
     private String information;
@@ -66,7 +68,7 @@ public class MetaData {
 
     @Override
     public String toString() {
-        return "MetaData{" +
+        return "com.example.intraday.MetaData{" +
                 "information='" + information + '\'' +
                 ", symbol='" + symbol + '\'' +
                 ", lastRefreshed='" + lastRefreshed + '\'' +
