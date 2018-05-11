@@ -1,3 +1,5 @@
+package com.example.intraday;
+
 public class IntraDay {
 
     private MetaData metaData;
@@ -26,7 +28,7 @@ public class IntraDay {
 
     @Override
     public String toString() {
-        return "IntraDay{" +
+        return "com.example.intraday.IntraDay{" +
                 "metaData=" + metaData +
                 ", timeSeries=" + timeSeries +
                 '}';
