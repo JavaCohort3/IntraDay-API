@@ -1,1 +1,1 @@
-# com.example.intraday.IntraDay-API
+# IntraDay-API
