@@ -1,5 +1,7 @@
 package com.example.intraday;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class IntraDay {
 
     private MetaData metaData;
@@ -8,19 +10,19 @@ public class IntraDay {
 
     private IntraDay() { }
 
-
+    @JsonProperty("Meta Data")
     public MetaData getMetaData() {
         return metaData;
     }
-
+    @JsonProperty("Meta Data")
     public void setMetaData(MetaData metaData) {
         this.metaData = metaData;
     }
-
+    @JsonProperty("Time Series")
     public TimeSeries getTimeSeries() {
         return timeSeries;
     }
-
+    @JsonProperty("Time Series")
     public void setTimeSeries(TimeSeries timeSeries) {
         this.timeSeries = timeSeries;
     }
