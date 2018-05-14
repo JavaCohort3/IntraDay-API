@@ -1,10 +1,6 @@
 package com.example.intraday;
 
 
-
-
-
-
 import java.util.Map;
 
 public class TimeSeries {
