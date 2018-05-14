@@ -1,16 +1,29 @@
 package com.example.intraday;
 
 
+import java.util.Map;
 
 public class TimeSeries {
-   private Time time;
+
+    private Map<String, Time> time;
 
 
-    public Time getTime() {
+    public TimeSeries() {
+    }
+
+    public Map<String, Time> getTime() {
         return time;
     }
 
-    public void setTime(Time time) {
+
+    public void setTime(Map<String, Time> time) {
         this.time = time;
+    }
+
+    @Override
+    public String toString() {
+        return "TimeSeries{" +
+                "time=" + time +
+                '}';
     }
 }

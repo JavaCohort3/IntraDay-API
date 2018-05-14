@@ -18,6 +18,7 @@ public class IntraDay {
     public void setMetaData(MetaData metaData) {
         this.metaData = metaData;
     }
+  
     @JsonProperty("Time Series (1min)")
     public TimeSeries getTimeSeries() {
         return timeSeries;
