@@ -1,16 +1,30 @@
 package com.example.intraday;
 
+import com.fasterxml.jackson.annotation.JsonRootName;
+import java.util.Map;
+
+@JsonRootName("Time Series (1min)")
+public class TimeSeries<Time> {
+
+    private Map<String, Time> time;
 
 
-public class TimeSeries {
-   private Time time;
 
+    public TimeSeries(){}
 
-    public Time getTime() {
+    public Map<String, Time> getTime() {
         return time;
     }
 
-    public void setTime(Time time) {
+
+    public void setTime(Map<String, Time> time) {
         this.time = time;
+    }
+
+    @Override
+    public String toString() {
+        return "TimeSeries{" +
+            "time=" + time +
+            '}';
     }
 }
