@@ -7,7 +7,7 @@ package com.example.intraday;
 
 import java.util.Map;
 
-public class TimeSeries<Time> {
+public class TimeSeries {
 
     private Map<String, Time> time;
 
