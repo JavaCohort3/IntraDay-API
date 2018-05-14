@@ -11,8 +11,8 @@ public class MetaData {
     private String outputSize;
     private String timeZone;
 
-    public MetaData() {
-    }
+    public MetaData() {}
+    
     @JsonProperty("1. Information")
     public String getInformation() {
         return information;
