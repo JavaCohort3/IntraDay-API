@@ -1,6 +1,7 @@
 package com.example.intraday;
 
-import com.fasterxml.jackson.annotation.JsonGetter;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Time {
     private double open;
@@ -12,47 +13,52 @@ public class Time {
     public Time() {
     }
 
-    @JsonGetter("1. open")
+    @JsonProperty("1. open")
     public double getOpen() {
         return open;
     }
 
+    @JsonProperty("1. open")
     public void setOpen(double open) {
         this.open = open;
     }
 
-    @JsonGetter("2. high")
+    @JsonProperty("2. high")
     public double getHigh() {
         return high;
     }
 
+    @JsonProperty("2. open")
     public void setHigh(double high) {
         this.high = high;
     }
 
-    @JsonGetter("3. high")
+    @JsonProperty("3. low")
     public double getLow() {
         return low;
     }
 
+    @JsonProperty("3. low")
     public void setLow(double low) {
         this.low = low;
     }
 
-    @JsonGetter("4. close")
+    @JsonProperty("4. close")
     public double getClose() {
         return close;
     }
 
+    @JsonProperty("4. close")
     public void setClose(double close) {
         this.close = close;
     }
 
-    @JsonGetter("5. volume")
+    @JsonProperty("5. volume")
     public long getVolume() {
         return volume;
     }
 
+    @JsonProperty("5. volume")
     public void setVolume(long volume) {
         this.volume = volume;
     }
