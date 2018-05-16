@@ -6,12 +6,10 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class IntraDay {
-
     private MetaData metaData;
-
     private Map<Integer, Time> timeSeries = new TreeMap<>();
 
-    private IntraDay() { }
+    private IntraDay() {}
 
     @JsonProperty("Meta Data")
     public MetaData getMetaData() {
