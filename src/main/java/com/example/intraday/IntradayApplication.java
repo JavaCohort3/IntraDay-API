@@ -7,11 +7,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
-import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.client.RestTemplate;
 
-@EnableScheduling
 @SpringBootApplication
 public class IntradayApplication {
 
@@ -27,7 +24,6 @@ public class IntradayApplication {
 		return builder.build();
 	}
 
-	@Scheduled(fixedRate = 1000)
 	@Bean
 	public static CommandLineRunner consumeAPI() throws Exception {
 		RestTemplate restTemplate = restTemplate(builder);
