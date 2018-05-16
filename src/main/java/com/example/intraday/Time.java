@@ -60,4 +60,16 @@ public class Time {
     public void setVolume(long volume) {
         this.volume = volume;
     }
+
+
+    @Override
+    public String toString() {
+        return "Time{" +
+                "open=" + open +
+                ", high=" + high +
+                ", low=" + low +
+                ", close=" + close +
+                ", volume=" + volume +
+                '}';
+    }
 }

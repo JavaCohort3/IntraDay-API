@@ -9,16 +9,13 @@ import java.util.TreeMap;
 
 public class IntraDay {
     private MetaData metaData;
-    private Map<Integer, Time> timeSeries = new TreeMap<>();
 
-<<<<<<< HEAD
-
+    private Map<String, Time> timeSeries = new TreeMap<>();
 
 
-    private IntraDay() { }
-=======
+
+
     private IntraDay() {}
->>>>>>> 27605743eb6cbc48a46e88f88a4d8ac242c2ca50
 
     @JsonProperty("Meta Data")
     public MetaData getMetaData() {
@@ -31,12 +28,12 @@ public class IntraDay {
     }
 
     @JsonProperty("Time Series (1min)")
-    public Map<Integer, Time> getTimeSeries() {
+    public Map<String, Time> getTimeSeries() {
         return timeSeries;
     }
 
     @JsonProperty("Time Series (1min)")
-    public void setTimeSeries(Map<Integer, Time> timeSeries) {
+    public void setTimeSeries(Map<String, Time> timeSeries) {
         this.timeSeries = timeSeries;
     }
 
