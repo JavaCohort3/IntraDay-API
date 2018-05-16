@@ -11,7 +11,6 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class IntradayApplication {
-
 	private static final Logger log = LoggerFactory.getLogger(SpringApplication.class);
 	private static RestTemplateBuilder builder = new RestTemplateBuilder();
 
