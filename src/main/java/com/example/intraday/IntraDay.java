@@ -2,6 +2,8 @@ package com.example.intraday;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -10,6 +12,9 @@ public class IntraDay {
     private MetaData metaData;
 
     private Map<Integer, Time> timeSeries = new TreeMap<>();
+
+
+
 
     private IntraDay() { }
 
