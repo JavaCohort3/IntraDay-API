@@ -9,7 +9,7 @@ public class IntraDay {
 
     private MetaData metaData;
 
-    private Map<Integer, Time> timeSeries = new TreeMap<>();
+    private Map<String, Time> timeSeries = new TreeMap<>();
 
     private IntraDay() { }
 
@@ -24,12 +24,12 @@ public class IntraDay {
     }
 
     @JsonProperty("Time Series (1min)")
-    public Map<Integer, Time> getTimeSeries() {
+    public Map<String, Time> getTimeSeries() {
         return timeSeries;
     }
 
     @JsonProperty("Time Series (1min)")
-    public void setTimeSeries(Map<Integer, Time> timeSeries) {
+    public void setTimeSeries(Map<String, Time> timeSeries) {
         this.timeSeries = timeSeries;
     }
 
