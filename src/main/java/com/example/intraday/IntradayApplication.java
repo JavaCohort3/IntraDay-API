@@ -31,7 +31,8 @@ public class IntradayApplication {
 		RestTemplate restTemplate = restTemplate(builder);
 		return args -> {
 			IntraDay alphaAPI = restTemplate.getForObject(
-					"https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo", IntraDay.class);
+					"https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo",
+					IntraDay.class);
 			log.info(alphaAPI.toString());
 		};
 	}
