@@ -16,14 +16,12 @@ import java.util.TreeMap;
 
 @SpringBootApplication
 public class IntradayApplication {
-<<<<<<< HEAD
 	public static void main(String[] args) {
 		SpringApplication.run(IntradayApplication.class, args);
 
 
     }
-
-=======
+	
 	private static final Logger log = LoggerFactory.getLogger(SpringApplication.class);
 	private static RestTemplateBuilder builder = new RestTemplateBuilder();
 
@@ -45,6 +43,5 @@ public class IntradayApplication {
 			log.info(alphaAPI.toString());
 		};
 	}
->>>>>>> 27605743eb6cbc48a46e88f88a4d8ac242c2ca50
 }
 
