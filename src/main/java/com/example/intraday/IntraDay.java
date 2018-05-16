@@ -9,11 +9,7 @@ import java.util.TreeMap;
 
 public class IntraDay {
     private MetaData metaData;
-
     private Map<String, Time> timeSeries = new TreeMap<>();
-
-
-
 
     private IntraDay() {}
 
