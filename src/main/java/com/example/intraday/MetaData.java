@@ -3,7 +3,6 @@ package com.example.intraday;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MetaData {
-
     private String information;
     private String symbol;
     private String lastRefreshed;

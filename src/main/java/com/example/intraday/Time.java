@@ -1,6 +1,5 @@
 package com.example.intraday;
 
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Time {
@@ -10,8 +9,7 @@ public class Time {
     private double close;
     private long volume;
 
-    public Time() {
-    }
+    public Time() {}
 
     @JsonProperty("1. open")
     public double getOpen() {
