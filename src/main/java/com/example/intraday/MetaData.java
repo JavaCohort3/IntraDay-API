@@ -75,7 +75,7 @@ public class MetaData {
 
     @Override
     public String toString() {
-        return "com.example.intraday.MetaData{" +
+        return "MetaData{" +
                 "information='" + information + '\'' +
                 ", symbol='" + symbol + '\'' +
                 ", lastRefreshed='" + lastRefreshed + '\'' +
